@@ -29,7 +29,7 @@ require('../config/config.php');
 	<!-- widgets -->
 	<div class="container-fluid mt-4">
 		<div class="row">
-			<div class="col-md-4 col-sm-6 col-12">
+			<div class="col-md-6 col-sm-6 col-12">
 				<a href="ward_revenue_target" class="text-dark">
 				<!-- <a href="ward_revenue_target?month=<?php $months ?>&fy=2024/2025" class="text-dark"> -->
 					<div class="info-box">
@@ -38,7 +38,7 @@ require('../config/config.php');
 						<div class="info-box-content">
 							<span class="info-box-text">System Users</span>
 							<span class="info-box-number">
-								2555
+								1
 							</span>
 						</div>
 						<!-- /.info-box-content -->
@@ -47,7 +47,7 @@ require('../config/config.php');
 				<!-- /.info-box -->
 			</div>
 			<!-- /.col -->
-			<div class="col-md-4 col-sm-6 col-12">
+			<div class="col-md-6 col-sm-6 col-12">
 				<!-- <a href="ward_revenue_target" class="text-dark"> -->
 				<!-- <a href="ward_collections?month=<?php $months ?>&fy=2024/2025" class="text-dark"> -->
 				<a href="ward_collections" class="text-dark">
@@ -56,9 +56,9 @@ require('../config/config.php');
 						<span class="info-box-icon" style="background: #ffcd3d"><i class="fas fa-wallet"></i></span>
 
 						<div class="info-box-content">
-							<span class="info-box-text">Regestered Users</span>
+							<span class="info-box-text">Inquiries</span>
 							<span class="info-box-number">
-								55858
+								2
 							</span>
 						</div>
 						<!-- /.info-box-content -->
@@ -67,25 +67,7 @@ require('../config/config.php');
 				<!-- /.info-box -->
 			</div>
 			<!-- /.col -->
-			<div class="col-md-4 col-sm-6 col-12">
-				<!-- <a href="ward_revenue_target" class="text-dark"> -->
-				<!-- <a href="ward_performance?month=<?php $months ?>&fy=2024/2025" class="text-dark"> -->
-				<a href="ward_performance" class="text-dark">
-
-					<div class="info-box">
-						<span class="info-box-icon" style="background: #ffcd3d"><i class="fas fa-percent"></i></span>
-
-						<div class="info-box-content">
-							<span class="info-box-text">Users</span>
-							<span class="info-box-number">
-								5845
-							</span>
-						</div>
-						<!-- /.info-box-content -->
-					</div>
-				</a>
-				<!-- /.info-box -->
-			</div>
+			
 		</div>		
 	</div>
 	<!-- ./widgets -->

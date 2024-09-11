@@ -1,0 +1,131 @@
+#svg{
+    width: 20px;
+    height: 20px;
+}
+body{
+    font-family: Arial;
+    font-size: larger;
+    line-height: 1.2;
+}
+#firstHeader{
+    background-color:  #28A745;
+    color: aliceblue;
+}
+#navButton{
+    color: #28A745;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col-sm-6{
+    padding-left: 40px;
+    padding-top: 5px;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+#facilitiesImage{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+#container{ 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#homeButton{
+    font-weight: bolder;
+    color: #36454f;
+}
+#navButton1{
+    color: #28A745;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: larger;
+}
+#schoolImage{
+    border-radius: 20px;
+}
+#newsAndUpdates{
+    align-items: center;
+    padding: 50px 0;
+    padding-left: 200px;
+}
+.mycard-body{
+    background-color: #36454f;
+    color: aliceblue;
+    border-radius: 15px;
+}
+#boardingImage{
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+h2{
+    color: #28A745;
+    text-align: center;
+}
+h3{
+    color: #36454f;
+}
+#applyButton{
+    color: aliceblue;
+}
+#academics, #boarding, #departments{
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.mycard-text{
+    color: aliceblue;
+}
+#firstFooter{
+    background-color: #28A745;
+    color: aliceblue;
+}
+#footer1{
+    padding-left: 5px;
+}
+#secondFooter{
+    background-color: #36454f;
+    color: aliceblue;
+    padding: 50px 0;
+    text-align: center;
+}
+#anchorTag{
+    text-decoration: none;
+    color: aliceblue;
+}
+ #customCarousel .carousel-inner {
+    background-color: #f8f9fa;
+    color: #0a5eb1;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#customCarousel .carousel-item {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#carouselManagement{
+    color: #28A745;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#applyButton{
+    color: #36454f;
+}
+  /* Styles for screens that are no wider than 599px */
+  @media (max-width: 599px) {
+    .row2 {
+      display: block;
+    }
+  }
+  

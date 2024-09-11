@@ -56,6 +56,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/public/css/adminlte.min.css"> <!-- Include your custom CSS file -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+	<link rel="stylesheet" href="../public/ack/styles.css">
+    <style>
+      /* Custom styles for this carousel */
+      #textCarousel .carousel-inner {
+          background-image: url('images1/ict5.jpg'); /* Replace with your background image path */
+          background-size: cover;
+          color: #36c35e;
+          text-align: center;
+          padding: 250px 0;
+      }
+      #textCarousel .carousel-item {
+          font-size: 2rem;
+          font-weight: bold;
+      }
+	 
+  </style>
+
     <?php
     /* Alert Sesion Via Alerts */
     if (isset($_SESSION['success'])) {

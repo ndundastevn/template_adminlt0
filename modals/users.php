@@ -38,41 +38,8 @@
 							</div>
 						</div>
 						
-						<div class="form-group col-sm-12 col-lg-6 col-xl-6">
-							<label class="form-control-label"> User Ward <span class="text-danger">*</span></label>
-							<div class="input-group input-group-merge">
-								<input type="hidden" required name="user_ward_id" class="form-control">
-                                <select type="text" required name="user_ward_id" class="form-control">
-                                    <?php
-                                    $fetch_services_sql = mysqli_query(
-                                        $mysqli,
-                                        "SELECT * FROM ward"
-                                    );
-                                    if (mysqli_num_rows($fetch_services_sql) > 0) {
-                                        while ($services = mysqli_fetch_array($fetch_services_sql)) {
-                                    ?>
-                                            <option value="<?php echo $services['ward_id']; ?>"><?php echo $services['ward_name']; ?></option>
-                                    <?php }
-                                    } ?>
-                                </select>
-							</div>
-						</div>										
-						<div class="form-group col-sm-12 col-lg-6 col-xl-6">
-							<label class="form-control-label">Access level <span class="text-danger">*</span></label>
-							<div class="input-group input-group-merge">
-								<select type="text" required name="user_access_level" class="form-control">
-									<option value="System Administrator">System Administrator</option>
-									<option value="ECM">ECM - ICT, Education & Internship</option>
-									<option value="ECMS">ECMs</option>
-									<option value="Chief Officer">Chief Officer</option>
-									<option value="Director">Director</option>
-									<option value="Director">Executive</option>
-									<option value="Director - IMV">Director - IMV</option>
-									<option value="Ward Administrator">Ward Administrator</option>
-									<option value="Revenue Collector">Revenue Collector</option>
-								</select>
-							</div>
-						</div>
+													
+						
 					</div>
 					<div class="text-right">
 						<button type="submit" name="Add_User" class="btn btn-outline-success">Add User</button>
@@ -128,26 +95,7 @@
 							</div>
 						</div>
 						
-						<div class="form-group col-sm-12 col-lg-6 col-xl-6">
-							<label class="form-control-label"> User Ward <span class="text-danger">*</span></label>
-							<div class="input-group input-group-merge">
-								<input type="hidden" required name="user_ward_id" class="form-control">
-                                <select type="text" required name="user_ward_id" class="form-control">
-									<option value="<?php echo $rows['user_ward_id']; ?>"><?php echo $rows['ward_name']; ?></option>
-                                    <?php
-                                    $fetch_services_sql = mysqli_query(
-                                        $mysqli,
-                                        "SELECT * FROM ward"
-                                    );
-                                    if (mysqli_num_rows($fetch_services_sql) > 0) {
-                                        while ($services = mysqli_fetch_array($fetch_services_sql)) {
-                                    ?>
-                                            <option value="<?php echo $services['ward_id']; ?>"><?php echo $services['ward_name']; ?></option>
-                                    <?php }
-                                    } ?>
-                                </select>
-							</div>
-						</div>
+						
 						<div class="form-group col-sm-12 col-lg-6 col-xl-6">
 							<label class="form-control-label">Access level <span class="text-danger">*</span></label>
 							<div class="input-group input-group-merge">
@@ -213,26 +161,7 @@
 							</div>
 						</div>
 						
-						<div class="form-group col-sm-12 col-lg-6 col-xl-6">
-							<label class="form-control-label"> User Ward <span class="text-danger">*</span></label>
-							<div class="input-group input-group-merge">
-								<input type="hidden" required name="user_ward_id" class="form-control">
-                                <select type="disabled" required name="user_ward_id" class="form-control">
-									<option value="<?php echo $rows['user_ward_id']; ?>"><?php echo $rows['ward_name']; ?></option>
-                                    <?php
-                                    $fetch_services_sql = mysqli_query(
-                                        $mysqli,
-                                        "SELECT * FROM ward"
-                                    );
-                                    if (mysqli_num_rows($fetch_services_sql) > 0) {
-                                        while ($services = mysqli_fetch_array($fetch_services_sql)) {
-                                    ?>
-                                            <option value="<?php echo $services['ward_id']; ?>"><?php echo $services['ward_name']; ?></option>
-                                    <?php }
-                                    } ?>
-                                </select>
-							</div>
-						</div>
+						
 						<div class="form-group col-sm-12 col-lg-6 col-xl-6">
 							<label class="form-control-label">Access level <span class="text-danger">*</span></label>
 							<div class="input-group input-group-merge">
@@ -298,26 +227,7 @@
 							</div>
 						</div>
 						
-						<div class="form-group col-sm-12 col-lg-6 col-xl-6">
-							<label class="form-control-label"> User Ward <span class="text-danger">*</span></label>
-							<div class="input-group input-group-merge">
-								<input type="hidden" required name="user_ward_id" class="form-control">
-                                <select type="disabled" required name="user_ward_id" class="form-control">
-									<option value="<?php echo $rows['user_ward_id']; ?>"><?php echo $rows['ward_name']; ?></option>
-                                    <?php
-                                    $fetch_services_sql = mysqli_query(
-                                        $mysqli,
-                                        "SELECT * FROM ward"
-                                    );
-                                    if (mysqli_num_rows($fetch_services_sql) > 0) {
-                                        while ($services = mysqli_fetch_array($fetch_services_sql)) {
-                                    ?>
-                                            <option value="<?php echo $services['ward_id']; ?>"><?php echo $services['ward_name']; ?></option>
-                                    <?php }
-                                    } ?>
-                                </select>
-							</div>
-						</div>
+						
 						<div class="form-group col-sm-12 col-lg-6 col-xl-6">
 							<label class="form-control-label">Access level <span class="text-danger">*</span></label>
 							<div class="input-group input-group-merge">

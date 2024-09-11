@@ -41,7 +41,7 @@ require_once('../partials/head.php');
                 </form>
                 <hr>
                 <p class="mb-1 text-center">
-                    <a href="reset_password">I forgot my password</a>
+					Don't have account? <a href="create_account">Create one</a> Forgot password <a href="reset_password">reset</a>
                 </p>
             </div>
             <!-- /.login-card-body -->

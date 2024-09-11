@@ -55,48 +55,25 @@
                         </p>
                     </a>
                 </li>
-
-
-				<!-- Reports -->
 				<li class="nav-item">
-					<a href="#" class="nav-link">
-						<i class="nav-icon fas fa-flag text-success"></i>
+                    <a href="inquiries" class="nav-link">
+						<i class="nav-icon fas fa-users text-success"></i>
 						<p>
-							Reports
-							<i class="fas fa-angle-left right"></i>
-							
-								<span class="badge badge-info right">5</span>
-							
-						</p>
-					</a>
-					<ul class="nav nav-treeview">
-						<li class="nav-item">
-							<a href="#" class="nav-link">
-								<i class="far fa-circle nav-icon"></i>
-								<p>Pending</p>
-							</a>
-						</li>
-						<li class="nav-item">
-						<a href="#" class="nav-link">
-								<i class="far fa-circle nav-icon"></i>
-								<p>Approved</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">
-								<i class="far fa-circle nav-icon"></i>
-								<p>Rejected</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">
-								<i class="far fa-circle nav-icon"></i>
-								<p>All reports</p>
-							</a>
-						</li>
-					</ul>
-				</li>
+                            Inquiries
+                        </p>
+                    </a>
+                </li>
+				<li class="nav-item">
+                    <a href="news" class="nav-link">
+						<i class="nav-icon fas fa-users text-success"></i>
+						<p>
+                            News and Updates
+                        </p>
+                    </a>
+                </li>
 
+
+			
 
 			</ul>
 		</nav>

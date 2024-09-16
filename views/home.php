@@ -208,15 +208,15 @@ require_once('../partials/headn.php');
 	<div id="newsAndUpdates" class="container m-0 p-0">		
 		<h2>News and Updates</h2>
 		<div id="" class="row">	
-		    <?php
-                                        $fetch_records_sql = mysqli_query(
-                                            $mysqli,
-                                            "SELECT * FROM news WHERE published_status = 'On'"												
-                                        );
-                                        if (mysqli_num_rows($fetch_records_sql) > 0) {
-                                            $cnt =  1;
-                                            while ($rows = mysqli_fetch_array($fetch_records_sql)) {
-                                        ?>
+			<?php
+			$fetch_records_sql = mysqli_query(
+				$mysqli,
+				"SELECT * FROM news WHERE published_status = 'On'"												
+			);
+			if (mysqli_num_rows($fetch_records_sql) > 0) {
+				$cnt =  1;
+				while ($rows = mysqli_fetch_array($fetch_records_sql)) {
+			?>
 			<div class="col-sm-6 col-12">
 			    <blockquote>
                   <p><?php echo $rows['news_message']; ?></p>

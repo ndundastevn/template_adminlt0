@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 28, 2024 at 03:10 PM
+-- Generation Time: Sep 16, 2024 at 02:59 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,8 +18,35 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `template_adminlte`
+-- Database: `ack_school`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `inquirys`
+--
+
+CREATE TABLE `inquirys` (
+  `inquiry_id` int(11) NOT NULL,
+  `user_fname` varchar(200) NOT NULL,
+  `user_lname` varchar(200) NOT NULL,
+  `user_email` varchar(200) NOT NULL,
+  `user_phone` varchar(200) NOT NULL,
+  `inquiry_subject` varchar(200) NOT NULL,
+  `inquiry_message` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `inquirys`
+--
+
+INSERT INTO `inquirys` (`inquiry_id`, `user_fname`, `user_lname`, `user_email`, `user_phone`, `inquiry_subject`, `inquiry_message`, `created_at`) VALUES
+(1, 'mary', 'kamau', 'ndundastevn@gmail.com', '0799119338', 'Inquiry on enrolment', 'my inqury', '2024-09-11 03:28:30'),
+(2, 'dsdsd', 'dsdsd', 'ndundastevn@gmail.com', 'dsdsd', 'fdfdf', 'dfdfd', '2024-09-11 08:36:33'),
+(3, 'dsdsd', 'dsdsd', 'mumostevn@gmail.com', '07885599656', 'new subject', 'new message', '2024-09-11 13:09:35'),
+(4, 'mary', 'kamau', 'mumostevn@gmail.com', '07885599656', 'Inquiry on enrolment', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem necessitatibus exercitationem provident eos placeat doloribus optio quidem tempora accusantium. ', '2024-09-16 11:32:37');
 
 -- --------------------------------------------------------
 
@@ -307,7 +334,20 @@ INSERT INTO `logs` (`log_id`, `log_user_id`, `log_user_type`, `log_date`, `log_i
 (264, 16, 'System Administrator', '2024-08-28 14:00:31', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0'),
 (265, 16, 'System Administrator', '2024-08-28 14:36:12', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0'),
 (266, 16, 'System Administrator', '2024-08-28 14:36:31', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0'),
-(267, 16, 'System Administrator', '2024-08-28 15:50:43', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0');
+(267, 16, 'System Administrator', '2024-08-28 15:50:43', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0'),
+(268, 16, 'System Administrator', '2024-09-11 06:35:29', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(269, 16, 'System Administrator', '2024-09-11 06:55:47', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(270, 16, 'System Administrator', '2024-09-11 08:27:05', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(271, 16, 'System Administrator', '2024-09-11 08:42:43', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(272, 16, 'System Administrator', '2024-09-11 11:13:14', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(273, 16, 'System Administrator', '2024-09-11 11:17:24', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(274, 16, 'System Administrator', '2024-09-11 11:22:58', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(275, 16, 'System Administrator', '2024-09-11 16:11:05', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(276, 16, 'System Administrator', '2024-09-13 15:29:02', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(277, 16, 'System Administrator', '2024-09-16 13:04:46', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(278, 16, 'System Administrator', '2024-09-16 14:21:34', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(279, 16, 'System Administrator', '2024-09-16 14:28:19', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0'),
+(280, 16, 'System Administrator', '2024-09-16 14:36:33', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0');
 
 -- --------------------------------------------------------
 
@@ -333,6 +373,30 @@ CREATE TABLE `mailer_settings` (
 
 INSERT INTO `mailer_settings` (`id`, `mailer_host`, `mailer_port`, `mailer_protocol`, `mailer_username`, `mailer_mail_from_name`, `mailer_mail_from_email`, `mailer_password`, `mailer_status`) VALUES
 (2, 'rbx109.truehost.cloud', '587', 'tls', 'litecms@devlan.co.ke', 'Government of Makueni County', 'litecms@devlan.co.ke', '20Devlan@', 'Active');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news`
+--
+
+CREATE TABLE `news` (
+  `news_id` int(11) NOT NULL,
+  `news_subject` varchar(200) NOT NULL,
+  `news_message` text NOT NULL,
+  `news_user_id` int(11) NOT NULL,
+  `published_status` varchar(5) NOT NULL DEFAULT 'Off',
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`news_id`, `news_subject`, `news_message`, `news_user_id`, `published_status`, `created_at`) VALUES
+(3, 'Opening Dates', '							Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Alias Dolorem Necessitatibus Exercitationem Provident Eos Placeat Doloribus Optio Quidem Tempora Accusantium.\r\n', 16, 'On', '2024-09-11 08:15:01'),
+(4, 'End of term exams', '							Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem necessitatibus exercitationem provident eos placeat doloribus optio quidem tempora accusantium.\r\n', 16, 'on', '2024-09-11 08:17:59'),
+(5, 'enrolment', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem necessitatibus exercitationem provident eos placeat doloribus optio quidem tempora accusantium. ', 16, 'on', '2024-09-16 11:31:45');
 
 -- --------------------------------------------------------
 
@@ -369,7 +433,6 @@ CREATE TABLE `users` (
   `user_password` varchar(200) NOT NULL,
   `user_password_reset_token` varchar(200) DEFAULT NULL,
   `user_access_level` varchar(200) NOT NULL,
-  `user_ward_id` int(200) DEFAULT NULL,
   `user_change_password` int(2) NOT NULL DEFAULT 0,
   `user_active_status` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -378,12 +441,18 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `user_names`, `user_email`, `user_phone_number`, `user_personal_number`, `user_password`, `user_password_reset_token`, `user_access_level`, `user_ward_id`, `user_change_password`, `user_active_status`) VALUES
-(16, 'faith admin', 'admin@example.com', '05545785585', '225586', '71fbbea0206b21ef688d33f0160602628dab9c7d', NULL, 'System Administrator', 18, 0, 1);
+INSERT INTO `users` (`user_id`, `user_names`, `user_email`, `user_phone_number`, `user_personal_number`, `user_password`, `user_password_reset_token`, `user_access_level`, `user_change_password`, `user_active_status`) VALUES
+(16, 'faith admin', 'admin@example.com', '05545785585', '225586', '71fbbea0206b21ef688d33f0160602628dab9c7d', NULL, 'System Administrator', 0, 1);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `inquirys`
+--
+ALTER TABLE `inquirys`
+  ADD PRIMARY KEY (`inquiry_id`);
 
 --
 -- Indexes for table `logs`
@@ -399,6 +468,13 @@ ALTER TABLE `mailer_settings`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`news_id`),
+  ADD KEY `newsUserID` (`news_user_id`);
+
+--
 -- Indexes for table `postfix_mailer_configs`
 --
 ALTER TABLE `postfix_mailer_configs`
@@ -408,24 +484,35 @@ ALTER TABLE `postfix_mailer_configs`
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`user_id`),
-  ADD KEY `UserWardID` (`user_ward_id`);
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
+-- AUTO_INCREMENT for table `inquirys`
+--
+ALTER TABLE `inquirys`
+  MODIFY `inquiry_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `logs`
 --
 ALTER TABLE `logs`
-  MODIFY `log_id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=268;
+  MODIFY `log_id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=281;
 
 --
 -- AUTO_INCREMENT for table `mailer_settings`
 --
 ALTER TABLE `mailer_settings`
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `news`
+--
+ALTER TABLE `news`
+  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `postfix_mailer_configs`
@@ -444,10 +531,10 @@ ALTER TABLE `users`
 --
 
 --
--- Constraints for table `users`
+-- Constraints for table `news`
 --
-ALTER TABLE `users`
-  ADD CONSTRAINT `UserWardID` FOREIGN KEY (`user_ward_id`) REFERENCES `ward` (`ward_id`) ON DELETE CASCADE ON UPDATE NO ACTION;
+ALTER TABLE `news`
+  ADD CONSTRAINT `newsUserID` FOREIGN KEY (`news_user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -36,10 +36,7 @@
 							<div class="input-group input-group-merge">
 								<input type="phone" required name="user_phone_number" class="form-control">
 							</div>
-						</div>
-						
-													
-						
+						</div>					
 					</div>
 					<div class="text-right">
 						<button type="submit" name="Add_User" class="btn btn-outline-success">Add User</button>
